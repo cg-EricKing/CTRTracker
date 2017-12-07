@@ -34,7 +34,7 @@ function main() {
     var startRow = 2;
     
     // Logger.log('Using spreadsheet - %s.', spreadsheetUrl);
-    var spreadsheet = SpredsheetApp.openByUrl(spreadsheetUrl);
+    var spreadsheet = SpreadsheetApp.openByUrl(spreadsheetUrl);
     var sheet = spreadsheet.getSheets()[0]; // change array index to accompnay sheet location
     var goodBadRange = sheet.getRange(13, 3);
     var GOOD = [['GOOD']];
@@ -54,7 +54,8 @@ function main() {
 
     var TARGET_CTR = .001;
 
-    var campaignIterator = AdWordsApp.campaigns().get();
+    var campaignIterator = AdWordsApp.campaigns()
+        .get();
     Logger.log('Total campaigns found : ' + campaignIterator.totalNumEntities());
     while(campaignIterator.hasNext()) {
         var campaign = campaignIterator.next();
