@@ -22,9 +22,7 @@
 // Target Mark
 // GOOD or BAD
 
-// iHeart Accounts
-// Gold's Gym, Fairway Home Detailing, Mednax, Inc
-// The Pet Vet on Patton, ProTec Security, Alan's Jwelery & Pawn
+
 
 
 function main() {
